@@ -1,73 +1,121 @@
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Portafolio — Allendi De Aza</title>
-<meta name="description" content="Portafolio digital de Allendi De Aza — Desarrollador web" />
-<style>
-:root{
---bg: #000000; /* fondo negro como ejemplo */
---card: #071214;
---muted: #a6b2b8;
---accent: #00c8ff; /* cyan vibrante */
---accent-2: #00a0d6; /* azul-cian secundario */
---glass: rgba(255,255,255,0.02);
---glass-2: rgba(255,255,255,0.01);
---radius: 12px;
---ff: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:var(--ff);background:var(--bg);color:#eef6fb}
-.container{max-width:1100px;margin:32px auto;padding:0 20px}
-
-
-header.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-.menu{display:flex;gap:18px}
-.menu a{color:var(--accent);text-decoration:none;font-weight:700}
-
-
-.hero-wrap{display:flex;gap:24px;align-items:flex-start;margin-top:18px}
-.left-col{flex:1}
-.right-col{width:360px}
-
-
-.card{background:linear-gradient(180deg,var(--card), rgba(7,18,20,0.7));padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
-h1{margin:0;font-size:34px}
-.subtitle{color:var(--muted);margin-top:8px}
-
-
-.cta{margin-top:18px}
-.btn{display:inline-block;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:700}
-.btn-outline{border:2px solid var(--accent);color:var(--accent);background:transparent}
-.btn-solid{background:var(--accent);color:#00222b}
-
-
-.socials{display:flex;flex-direction:column;gap:12px;margin-top:20px}
-.socials a{display:flex;align-items:center;gap:12px;padding:12px;border-radius:10px;border:2px solid rgba(0,200,255,0.12);text-decoration:none;color:var(--accent);background:transparent}
-
-
-.photo{border-radius:6px;overflow:hidden;border:4px solid rgba(0,0,0,0.2)}
-.photo img{width:100%;height:100%;object-fit:cover;display:block}
-
-
-section{margin-top:22px}
-h2{margin:0 0 12px 0}
-p.lead{color:var(--muted);line-height:1.6}
-
-
-.projects{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));border:1px solid rgba(255,255,255,0.02)}
-
-
-footer{margin-top:22px;text-align:center;padding:12px;background:var(--accent);color:#031a20;border-radius:8px}
-
-
-@media (max-width:880px){
-.hero-wrap{flex-direction:column}
-.right-col{width:100%}
-.projects{grid-template-columns:1fr}
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allendi De Aza — Portafolio</title>
+  <meta name="description" content="Portafolio de Allendi De Aza - Matrícula 23-SISN-2-012" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Allendi De Aza</h1>
+        <p class="subtitle">Matrícula: <strong>23-SISN-2-012</strong></p>
+      </div>
+      <nav class="main-nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#curriculum">Currículum</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="inicio">
+      <div class="hero-left">
+        <h2>¡Hola! Soy <span>Allendi De Aza</span></h2>
+        <p class="lead">Desarrollador Front-end en formación — Creando páginas web limpias y responsivas.</p>
+        <p><strong>Dirección:</strong> La Romana, Rep. Dom.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#proyectos">Ver Proyectos</a>
+          <a class="btn ghost" href="#contacto">Contactarme</a>
+        </div>
+
+        <div class="socials">
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">Github</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Reemplaza 'images/foto.jpg' con tu foto real -->
+        <div class="photo-card">
+          <img src="images/foto.jpg" alt="Foto de Allendi De Aza" />
+          <p class="caption">Allendi De Aza — 23-SISN-2-012</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section class="sobre container" id="sobre-mi">
+      <h3>Sobre mí</h3>
+      <p>Soy Allendi De Aza, estudiante/aspirante a desarrollador web. Me apasiona el diseño de interfaces y convertir ideas en páginas funcionales y accesibles.</p>
+      <ul>
+        <li><strong>Correo:</strong> <a href="mailto:deazaallendy@gmail.com">deazaallendy@gmail.com</a></li>
+        <li><strong>Ubicación:</strong> La Romana, República Dominicana</li>
+      </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="proyectos container" id="proyectos">
+      <h3>Proyectos</h3>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h4>Proyecto ejemplo: Portafolio</h4>
+          <p>Portafolio hecho con HTML y CSS. Deploy en Vercel y código en GitHub.</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">Ver en Vercel</a>
+        </article>
+
+        <article class="project-card">
+          <h4>Proyecto 2: Calculadora</h4>
+          <p>Calculadora simple en JavaScript (ejemplo para practicar).</p>
+          <a class="project-link" href="#" target="_blank" rel="noopener">Ver repo</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum container" id="curriculum">
+      <h3>Currículum</h3>
+      <p>Breve resumen de estudios y habilidades.</p>
+      <ul>
+        <li>Habilidades: HTML, CSS, nociones de JavaScript</li>
+        <li>Intereses: Desarrollo Front-end, UI/UX</li>
+      </ul>
+      <a class="btn" href="docs/CV-Allendi-De-Aza.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto container" id="contacto">
+      <h3>Contáctame</h3>
+      <p>Si quieres escribirme, usa mi correo:</p>
+      <a class="mailto" href="mailto:deazaallendy@gmail.com">deazaallendy@gmail.com</a>
+
+      <div class="info-card">
+        <p><strong>Nombre:</strong> Allendi De Aza</p>
+        <p><strong>Matrícula:</strong> 23-SISN-2-012</p>
+        <p><strong>Dirección:</strong> La Romana, Rep. Dom.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Desarrollado por <strong>Allendi De Aza</strong> — Matrícula 23-SISN-2-012</p>
+      <small>&copy; <span id="year"></span></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
