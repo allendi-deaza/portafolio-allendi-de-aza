@@ -73,4 +73,38 @@ body{
   .hero-right{ width:100%; justify-content:center; }
   .main-nav { 
     display: none; }
+
   }
+/* --- Redes sociales estilo profesional tipo el ejemplo --- */
+.social-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 220px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .7rem 1rem;
+  border: 1px solid #18a0d6;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #18a0d6;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: .2s ease;
+  background: rgba(255,255,255,0.03);
+}
+
+.social-btn i {
+  font-size: 1.1rem;
+}
+
+.social-btn:hover {
+  background: #18a0d6;
+  color: #06121a;
+}
