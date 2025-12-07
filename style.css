@@ -75,6 +75,28 @@ body{
     display: none; }
 
   }
+/* --- Sección principal tipo el modelo --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+/* Columna izquierda */
+.hero-content {
+  flex: 1;
+}
+
+/* Columna derecha: foto */
+.hero-img img {
+  width: 260px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
 /* --- Redes sociales estilo profesional tipo el ejemplo --- */
 .social-buttons {
   margin-top: 1.5rem;
@@ -108,3 +130,4 @@ body{
   background: #18a0d6;
   color: #06121a;
 }
+
