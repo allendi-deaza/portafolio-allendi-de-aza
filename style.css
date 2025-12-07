@@ -11,11 +11,12 @@
 }
 
 body{
-  background: linear-gradient(180deg, #071023 0%, #071828 100%);
+  background: linear-gradient(180deg, #000000 0%, #050505 100%);
   color: #e6eef6;
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
 }
+
 
 /* container layout */
 .container{ max-width:1100px; margin:0 auto; padding: 2rem; }
@@ -130,4 +131,5 @@ body{
   background: #18a0d6;
   color: #06121a;
 }
+
 
